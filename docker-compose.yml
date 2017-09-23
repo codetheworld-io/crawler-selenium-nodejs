@@ -1,0 +1,17 @@
+version: "2"
+services:
+  app:
+    image: node:argon
+    volumes:
+      - ./:/app
+    links:
+      - selenium-hub:hubserver
+    environment:
+      - SELENIUM_REMOTE_URL="http://hubserver/4444/wd/hub"
+    tty: true
+  selenium-node-firefox:
+    image: selenium/node-firefox
+    links:
+      - selenium-hub:hub
+  selenium-hub:
+    image: selenium/hub

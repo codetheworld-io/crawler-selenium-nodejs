@@ -1,0 +1,19 @@
+{
+  "name": "selenium-docker-nodejs",
+  "version": "1.0.0",
+  "description": "Crawl data with Selenum nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawl",
+    "selenium"
+  ],
+  "author": "hoangdv",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "selenium-webdriver": "^3.5.0"
+  }
+}
